@@ -4,7 +4,7 @@ MODEL_PATH=$1
 MODEL_BASENAME=$(basename $MODEL_PATH)
 
 python -m lm_eval --model hf \
-    --model_args pretrained=$MODEL_PATH,backend="causal" \
+    --model_args pretrained=$MODEL_PATH,backend="causal",trust_remote_code=True \
     --tasks blimp_filtered,blimp_supplement \
     --device cuda:0 \
     --batch_size 1 \

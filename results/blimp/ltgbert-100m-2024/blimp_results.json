@@ -1,0 +1,334 @@
+{
+  "results": {
+    "blimp_wh_island": {
+      "acc,none": 0.712,
+      "acc_stderr,none": 0.014326941797231558,
+      "alias": "blimp_wh_island"
+    },
+    "blimp_sentential_subject_island": {
+      "acc,none": 0.334,
+      "acc_stderr,none": 0.01492201952373297,
+      "alias": "blimp_sentential_subject_island"
+    },
+    "blimp_regular_plural_subject_verb_agreement_2": {
+      "acc,none": 0.871,
+      "acc_stderr,none": 0.010605256784796591,
+      "alias": "blimp_regular_plural_subject_verb_agreement_2"
+    },
+    "blimp_regular_plural_subject_verb_agreement_1": {
+      "acc,none": 0.89,
+      "acc_stderr,none": 0.00989939381972444,
+      "alias": "blimp_regular_plural_subject_verb_agreement_1"
+    },
+    "blimp_irregular_plural_subject_verb_agreement_2": {
+      "acc,none": 0.483,
+      "acc_stderr,none": 0.01581015372983345,
+      "alias": "blimp_irregular_plural_subject_verb_agreement_2"
+    },
+    "blimp_irregular_plural_subject_verb_agreement_1": {
+      "acc,none": 0.551,
+      "acc_stderr,none": 0.0157367927687521,
+      "alias": "blimp_irregular_plural_subject_verb_agreement_1"
+    },
+    "blimp_irregular_past_participle_verbs": {
+      "acc,none": 0.865,
+      "acc_stderr,none": 0.010811655372416051,
+      "alias": "blimp_irregular_past_participle_verbs"
+    },
+    "blimp_complex_NP_island": {
+      "acc,none": 0.561,
+      "acc_stderr,none": 0.01570113134540077,
+      "alias": "blimp_complex_NP_island"
+    },
+    "blimp_adjunct_island": {
+      "acc,none": 0.834,
+      "acc_stderr,none": 0.011772110370812184,
+      "alias": "blimp_adjunct_island"
+    }
+  },
+  "group_subtasks": {
+    "blimp_adjunct_island": [],
+    "blimp_complex_NP_island": [],
+    "blimp_irregular_past_participle_verbs": [],
+    "blimp_irregular_plural_subject_verb_agreement_1": [],
+    "blimp_irregular_plural_subject_verb_agreement_2": [],
+    "blimp_regular_plural_subject_verb_agreement_1": [],
+    "blimp_regular_plural_subject_verb_agreement_2": [],
+    "blimp_sentential_subject_island": [],
+    "blimp_wh_island": []
+  },
+  "configs": {
+    "blimp_adjunct_island": {
+      "task": "blimp_adjunct_island",
+      "group": "blimp",
+      "dataset_path": "blimp",
+      "dataset_name": "adjunct_island",
+      "validation_split": "train",
+      "doc_to_text": "",
+      "doc_to_target": 0,
+      "doc_to_choice": "{{[sentence_good, sentence_bad]}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc"
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "{{sentence_good}} {{sentence_bad}}",
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "blimp_complex_NP_island": {
+      "task": "blimp_complex_NP_island",
+      "group": "blimp",
+      "dataset_path": "blimp",
+      "dataset_name": "complex_NP_island",
+      "validation_split": "train",
+      "doc_to_text": "",
+      "doc_to_target": 0,
+      "doc_to_choice": "{{[sentence_good, sentence_bad]}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc"
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "{{sentence_good}} {{sentence_bad}}",
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "blimp_irregular_past_participle_verbs": {
+      "task": "blimp_irregular_past_participle_verbs",
+      "group": "blimp",
+      "dataset_path": "blimp",
+      "dataset_name": "irregular_past_participle_verbs",
+      "validation_split": "train",
+      "doc_to_text": "",
+      "doc_to_target": 0,
+      "doc_to_choice": "{{[sentence_good, sentence_bad]}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc"
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "{{sentence_good}} {{sentence_bad}}",
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "blimp_irregular_plural_subject_verb_agreement_1": {
+      "task": "blimp_irregular_plural_subject_verb_agreement_1",
+      "group": "blimp",
+      "dataset_path": "blimp",
+      "dataset_name": "irregular_plural_subject_verb_agreement_1",
+      "validation_split": "train",
+      "doc_to_text": "",
+      "doc_to_target": 0,
+      "doc_to_choice": "{{[sentence_good, sentence_bad]}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc"
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "{{sentence_good}} {{sentence_bad}}",
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "blimp_irregular_plural_subject_verb_agreement_2": {
+      "task": "blimp_irregular_plural_subject_verb_agreement_2",
+      "group": "blimp",
+      "dataset_path": "blimp",
+      "dataset_name": "irregular_plural_subject_verb_agreement_2",
+      "validation_split": "train",
+      "doc_to_text": "",
+      "doc_to_target": 0,
+      "doc_to_choice": "{{[sentence_good, sentence_bad]}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc"
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "{{sentence_good}} {{sentence_bad}}",
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "blimp_regular_plural_subject_verb_agreement_1": {
+      "task": "blimp_regular_plural_subject_verb_agreement_1",
+      "group": "blimp",
+      "dataset_path": "blimp",
+      "dataset_name": "regular_plural_subject_verb_agreement_1",
+      "validation_split": "train",
+      "doc_to_text": "",
+      "doc_to_target": 0,
+      "doc_to_choice": "{{[sentence_good, sentence_bad]}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc"
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "{{sentence_good}} {{sentence_bad}}",
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "blimp_regular_plural_subject_verb_agreement_2": {
+      "task": "blimp_regular_plural_subject_verb_agreement_2",
+      "group": "blimp",
+      "dataset_path": "blimp",
+      "dataset_name": "regular_plural_subject_verb_agreement_2",
+      "validation_split": "train",
+      "doc_to_text": "",
+      "doc_to_target": 0,
+      "doc_to_choice": "{{[sentence_good, sentence_bad]}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc"
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "{{sentence_good}} {{sentence_bad}}",
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "blimp_sentential_subject_island": {
+      "task": "blimp_sentential_subject_island",
+      "group": "blimp",
+      "dataset_path": "blimp",
+      "dataset_name": "sentential_subject_island",
+      "validation_split": "train",
+      "doc_to_text": "",
+      "doc_to_target": 0,
+      "doc_to_choice": "{{[sentence_good, sentence_bad]}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc"
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "{{sentence_good}} {{sentence_bad}}",
+      "metadata": {
+        "version": 1.0
+      }
+    },
+    "blimp_wh_island": {
+      "task": "blimp_wh_island",
+      "group": "blimp",
+      "dataset_path": "blimp",
+      "dataset_name": "wh_island",
+      "validation_split": "train",
+      "doc_to_text": "",
+      "doc_to_target": 0,
+      "doc_to_choice": "{{[sentence_good, sentence_bad]}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc"
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "{{sentence_good}} {{sentence_bad}}",
+      "metadata": {
+        "version": 1.0
+      }
+    }
+  },
+  "versions": {
+    "blimp_adjunct_island": 1.0,
+    "blimp_complex_NP_island": 1.0,
+    "blimp_irregular_past_participle_verbs": 1.0,
+    "blimp_irregular_plural_subject_verb_agreement_1": 1.0,
+    "blimp_irregular_plural_subject_verb_agreement_2": 1.0,
+    "blimp_regular_plural_subject_verb_agreement_1": 1.0,
+    "blimp_regular_plural_subject_verb_agreement_2": 1.0,
+    "blimp_sentential_subject_island": 1.0,
+    "blimp_wh_island": 1.0
+  },
+  "n-shot": {
+    "blimp_adjunct_island": 0,
+    "blimp_complex_NP_island": 0,
+    "blimp_irregular_past_participle_verbs": 0,
+    "blimp_irregular_plural_subject_verb_agreement_1": 0,
+    "blimp_irregular_plural_subject_verb_agreement_2": 0,
+    "blimp_regular_plural_subject_verb_agreement_1": 0,
+    "blimp_regular_plural_subject_verb_agreement_2": 0,
+    "blimp_sentential_subject_island": 0,
+    "blimp_wh_island": 0
+  },
+  "config": {
+    "model": "hf-mlm",
+    "model_args": "pretrained=babylm/ltgbert-100m-2024,backend=mlm,trust_remote_code=True",
+    "batch_size": "1",
+    "batch_sizes": [],
+    "device": "cuda:1",
+    "use_cache": null,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": null
+  },
+  "git_hash": "d680c287",
+  "date": 1740749804.3413796,
+  "pretty_env_info": "PyTorch version: 2.6.0+cu118\nIs debug build: False\nCUDA used to build PyTorch: 11.8\nROCM used to build PyTorch: N/A\n\nOS: Microsoft Windows 11 Pro (10.0.26100 64 bits)\nGCC version: Could not collect\nClang version: Could not collect\nCMake version: Could not collect\nLibc version: N/A\n\nPython version: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)] (64-bit runtime)\nPython platform: Windows-10-10.0.26100-SP0\nIs CUDA available: True\nCUDA runtime version: Could not collect\nCUDA_MODULE_LOADING set to: LAZY\nGPU models and configuration: GPU 0: NVIDIA GeForce RTX 4080 SUPER\nNvidia driver version: 560.94\ncuDNN version: Could not collect\nHIP runtime version: N/A\nMIOpen runtime version: N/A\nIs XNNPACK available: True\n\nCPU:\nName: Intel(R) Core(TM) i9-14900KF\nManufacturer: GenuineIntel\nFamily: 207\nArchitecture: 9\nProcessorType: 3\nDeviceID: CPU0\nCurrentClockSpeed: 3200\nMaxClockSpeed: 3200\nL2CacheSize: 32768\nL2CacheSpeed: None\nRevision: None\n\nVersions of relevant libraries:\n[pip3] numpy==1.26.4\n[pip3] torch==2.6.0+cu118\n[pip3] torchaudio==2.6.0+cu118\n[pip3] torchvision==0.21.0+cu118\n[conda] Could not collect",
+  "transformers_version": "4.46.3",
+  "upper_git_hash": null
+}
