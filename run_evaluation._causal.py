@@ -2,10 +2,11 @@ import subprocess
 # models in which it works:
 # phonemetransformers/GPT2-85M-BPE-TXT (babble)
 # bbunzeck/gpt-wee-small-curriculum
+# bbunzeck/gpt-wee-medium-curriculum
 
 
 # Define the model path at the beginning
-MODEL_PATH = "phonemetransformers/GPT2-85M-BPE-TXT"
+MODEL_PATH = "bbunzeck/gpt-wee-medium-curriculum"
 MODEL_BASENAME = MODEL_PATH.split("/")[-1]  # Extract model name
 
 def run_evaluation():
@@ -24,3 +25,4 @@ def run_evaluation():
 
 if __name__ == "__main__":
     run_evaluation()
+

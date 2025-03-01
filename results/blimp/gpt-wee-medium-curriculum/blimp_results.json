@@ -1,48 +1,48 @@
 {
   "results": {
     "blimp_wh_island": {
-      "acc,none": 0.693,
-      "acc_stderr,none": 0.014593284892852627,
+      "acc,none": 0.503,
+      "acc_stderr,none": 0.015819015179246724,
       "alias": "blimp_wh_island"
     },
     "blimp_sentential_subject_island": {
-      "acc,none": 0.375,
-      "acc_stderr,none": 0.015316971293620996,
+      "acc,none": 0.348,
+      "acc_stderr,none": 0.01507060460376841,
       "alias": "blimp_sentential_subject_island"
     },
     "blimp_regular_plural_subject_verb_agreement_2": {
-      "acc,none": 0.874,
-      "acc_stderr,none": 0.010499249222408047,
+      "acc,none": 0.688,
+      "acc_stderr,none": 0.014658474370509012,
       "alias": "blimp_regular_plural_subject_verb_agreement_2"
     },
     "blimp_regular_plural_subject_verb_agreement_1": {
-      "acc,none": 0.908,
-      "acc_stderr,none": 0.009144376393151117,
+      "acc,none": 0.777,
+      "acc_stderr,none": 0.013169830843425677,
       "alias": "blimp_regular_plural_subject_verb_agreement_1"
     },
     "blimp_irregular_plural_subject_verb_agreement_2": {
-      "acc,none": 0.865,
-      "acc_stderr,none": 0.010811655372416051,
+      "acc,none": 0.733,
+      "acc_stderr,none": 0.013996674851796273,
       "alias": "blimp_irregular_plural_subject_verb_agreement_2"
     },
     "blimp_irregular_plural_subject_verb_agreement_1": {
-      "acc,none": 0.901,
-      "acc_stderr,none": 0.009449248027662732,
+      "acc,none": 0.685,
+      "acc_stderr,none": 0.014696631960792506,
       "alias": "blimp_irregular_plural_subject_verb_agreement_1"
     },
     "blimp_irregular_past_participle_verbs": {
-      "acc,none": 0.874,
-      "acc_stderr,none": 0.010499249222408044,
+      "acc,none": 0.828,
+      "acc_stderr,none": 0.011939788882495321,
       "alias": "blimp_irregular_past_participle_verbs"
     },
     "blimp_complex_NP_island": {
-      "acc,none": 0.526,
-      "acc_stderr,none": 0.015797897758042762,
+      "acc,none": 0.404,
+      "acc_stderr,none": 0.015524980677122584,
       "alias": "blimp_complex_NP_island"
     },
     "blimp_adjunct_island": {
-      "acc,none": 0.803,
-      "acc_stderr,none": 0.012583693787968114,
+      "acc,none": 0.56,
+      "acc_stderr,none": 0.01570498795436179,
       "alias": "blimp_adjunct_island"
     }
   },
@@ -317,7 +317,7 @@
   },
   "config": {
     "model": "hf",
-    "model_args": "pretrained=phonemetransformers/GPT2-85M-BPE-TXT,backend=causal,trust_remote_code=True",
+    "model_args": "pretrained=bbunzeck/gpt-wee-medium-curriculum,backend=causal,trust_remote_code=True",
     "batch_size": "1",
     "batch_sizes": [],
     "device": "cuda:1",
@@ -327,7 +327,7 @@
     "gen_kwargs": null
   },
   "git_hash": "0df25c6b",
-  "date": 1740830561.0653737,
+  "date": 1740832808.7667778,
   "pretty_env_info": "PyTorch version: 2.6.0+cu118\nIs debug build: False\nCUDA used to build PyTorch: 11.8\nROCM used to build PyTorch: N/A\n\nOS: Microsoft Windows 11 Pro (10.0.26100 64 bits)\nGCC version: Could not collect\nClang version: Could not collect\nCMake version: Could not collect\nLibc version: N/A\n\nPython version: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)] (64-bit runtime)\nPython platform: Windows-10-10.0.26100-SP0\nIs CUDA available: True\nCUDA runtime version: Could not collect\nCUDA_MODULE_LOADING set to: LAZY\nGPU models and configuration: GPU 0: NVIDIA GeForce RTX 4080 SUPER\nNvidia driver version: 560.94\ncuDNN version: Could not collect\nHIP runtime version: N/A\nMIOpen runtime version: N/A\nIs XNNPACK available: True\n\nCPU:\nName: Intel(R) Core(TM) i9-14900KF\nManufacturer: GenuineIntel\nFamily: 207\nArchitecture: 9\nProcessorType: 3\nDeviceID: CPU0\nCurrentClockSpeed: 3200\nMaxClockSpeed: 3200\nL2CacheSize: 32768\nL2CacheSpeed: None\nRevision: None\n\nVersions of relevant libraries:\n[pip3] numpy==1.26.4\n[pip3] torch==2.6.0+cu118\n[pip3] torchaudio==2.6.0+cu118\n[pip3] torchvision==0.21.0+cu118\n[conda] Could not collect",
   "transformers_version": "4.46.3",
   "upper_git_hash": null
