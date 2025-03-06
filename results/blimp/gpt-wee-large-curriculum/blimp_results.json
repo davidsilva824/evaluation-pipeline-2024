@@ -1,48 +1,48 @@
 {
   "results": {
     "blimp_wh_island": {
-      "acc,none": 0.712,
-      "acc_stderr,none": 0.014326941797231558,
+      "acc,none": 0.469,
+      "acc_stderr,none": 0.015788865959539006,
       "alias": "blimp_wh_island"
     },
     "blimp_sentential_subject_island": {
-      "acc,none": 0.334,
-      "acc_stderr,none": 0.01492201952373297,
+      "acc,none": 0.371,
+      "acc_stderr,none": 0.015283736211823187,
       "alias": "blimp_sentential_subject_island"
     },
     "blimp_regular_plural_subject_verb_agreement_2": {
-      "acc,none": 0.871,
-      "acc_stderr,none": 0.010605256784796591,
+      "acc,none": 0.794,
+      "acc_stderr,none": 0.012795613612786565,
       "alias": "blimp_regular_plural_subject_verb_agreement_2"
     },
     "blimp_regular_plural_subject_verb_agreement_1": {
-      "acc,none": 0.89,
-      "acc_stderr,none": 0.00989939381972444,
+      "acc,none": 0.872,
+      "acc_stderr,none": 0.010570133761108658,
       "alias": "blimp_regular_plural_subject_verb_agreement_1"
     },
     "blimp_irregular_plural_subject_verb_agreement_2": {
-      "acc,none": 0.483,
-      "acc_stderr,none": 0.01581015372983345,
+      "acc,none": 0.734,
+      "acc_stderr,none": 0.01397996564514516,
       "alias": "blimp_irregular_plural_subject_verb_agreement_2"
     },
     "blimp_irregular_plural_subject_verb_agreement_1": {
-      "acc,none": 0.551,
-      "acc_stderr,none": 0.0157367927687521,
+      "acc,none": 0.756,
+      "acc_stderr,none": 0.013588548437881424,
       "alias": "blimp_irregular_plural_subject_verb_agreement_1"
     },
     "blimp_irregular_past_participle_verbs": {
-      "acc,none": 0.865,
-      "acc_stderr,none": 0.010811655372416051,
+      "acc,none": 0.808,
+      "acc_stderr,none": 0.012461592646659992,
       "alias": "blimp_irregular_past_participle_verbs"
     },
     "blimp_complex_NP_island": {
-      "acc,none": 0.561,
-      "acc_stderr,none": 0.01570113134540077,
+      "acc,none": 0.466,
+      "acc_stderr,none": 0.015782683329937625,
       "alias": "blimp_complex_NP_island"
     },
     "blimp_adjunct_island": {
-      "acc,none": 0.834,
-      "acc_stderr,none": 0.011772110370812184,
+      "acc,none": 0.486,
+      "acc_stderr,none": 0.015813097547730987,
       "alias": "blimp_adjunct_island"
     }
   },
@@ -316,8 +316,8 @@
     "blimp_wh_island": 0
   },
   "config": {
-    "model": "hf-mlm",
-    "model_args": "pretrained=babylm/ltgbert-100m-2024,backend=mlm,trust_remote_code=True",
+    "model": "hf",
+    "model_args": "pretrained=bbunzeck/gpt-wee-large-curriculum,backend=causal,trust_remote_code=True",
     "batch_size": "1",
     "batch_sizes": [],
     "device": "cuda:0",
@@ -327,7 +327,7 @@
     "gen_kwargs": null
   },
   "git_hash": "164bbf9e",
-  "date": 1741303437.9569252,
+  "date": 1741302111.248922,
   "pretty_env_info": "PyTorch version: 2.6.0+cu118\nIs debug build: False\nCUDA used to build PyTorch: 11.8\nROCM used to build PyTorch: N/A\n\nOS: Microsoft Windows 11 Pro (10.0.26100 64 bits)\nGCC version: Could not collect\nClang version: Could not collect\nCMake version: Could not collect\nLibc version: N/A\n\nPython version: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)] (64-bit runtime)\nPython platform: Windows-10-10.0.26100-SP0\nIs CUDA available: True\nCUDA runtime version: Could not collect\nCUDA_MODULE_LOADING set to: LAZY\nGPU models and configuration: GPU 0: NVIDIA GeForce RTX 4080 SUPER\nNvidia driver version: 560.94\ncuDNN version: Could not collect\nHIP runtime version: N/A\nMIOpen runtime version: N/A\nIs XNNPACK available: True\n\nCPU:\nName: Intel(R) Core(TM) i9-14900KF\nManufacturer: GenuineIntel\nFamily: 207\nArchitecture: 9\nProcessorType: 3\nDeviceID: CPU0\nCurrentClockSpeed: 3200\nMaxClockSpeed: 3200\nL2CacheSize: 32768\nL2CacheSpeed: None\nRevision: None\n\nVersions of relevant libraries:\n[pip3] numpy==1.26.4\n[pip3] torch==2.6.0+cu118\n[pip3] torchaudio==2.6.0+cu118\n[pip3] torchvision==0.21.0+cu118\n[conda] Could not collect",
   "transformers_version": "4.46.3",
   "upper_git_hash": null

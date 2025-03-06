@@ -1,12 +1,14 @@
 import subprocess
 import torch
 
+
 # List of model paths
 MODEL_PATHS = [
     "bbunzeck/gpt-wee-small-curriculum",
     "bbunzeck/gpt-wee-medium-curriculum",
     "bbunzeck/gpt-wee-large-curriculum"
 ]
+
 
 def run_evaluation(model_path):
     MODEL_BASENAME = model_path.split("/")[-1]  # Extract model name

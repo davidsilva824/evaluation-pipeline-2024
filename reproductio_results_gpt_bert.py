@@ -1,11 +1,12 @@
+### not tested
+
 import subprocess
 import torch
 
 # List of model paths
 MODEL_PATHS = [
-    "bbunzeck/gpt-wee-small-curriculum",
-    "bbunzeck/gpt-wee-medium-curriculum",
-    "bbunzeck/gpt-wee-large-curriculum"
+    "ltg/gpt-bert-babylm-small",
+    "ltg/gpt-bert-babylm-base"
 ]
 
 def run_evaluation(model_path):
@@ -19,8 +20,8 @@ def run_evaluation(model_path):
 
     command = [
         "python", "-m", "lm_eval",
-        "--model", "hf",
-        "--model_args", f"pretrained={model_path},backend=causal,trust_remote_code=True",
+        "--model", "hf-mlm",  # Ensure MLM is used
+        "--model_args", f"pretrained={model_path},backend=mlm,trust_remote_code=True",  # Explicitly set MLM class
         "--tasks", "blimp_irregular_past_participle_verbs,blimp_irregular_plural_subject_verb_agreement_1,blimp_irregular_plural_subject_verb_agreement_2,blimp_wh_island,blimp_adjunct_island,blimp_complex_NP_island,blimp_sentential_subject_island,blimp_regular_plural_subject_verb_agreement_1,blimp_regular_plural_subject_verb_agreement_2",
         "--device", device,
         "--batch_size", "1",
@@ -33,3 +34,5 @@ def run_evaluation(model_path):
 if __name__ == "__main__":
     for model_path in MODEL_PATHS:
         run_evaluation(model_path)
+
+
