@@ -6,7 +6,7 @@ import subprocess
 
 
 # Define the model path at the beginning
-MODEL_PATH = "bbunzeck/gpt-wee-medium-curriculum"
+MODEL_PATH = "phonemetransformers/GPT2-85M-BPE-TXT"
 MODEL_BASENAME = MODEL_PATH.split("/")[-1]  # Extract model name
 
 def run_evaluation():

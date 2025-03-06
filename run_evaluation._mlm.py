@@ -4,7 +4,7 @@
 import subprocess
 
 # Define the model path
-MODEL_PATH = "babylm/ltgbert-100m-2024"
+MODEL_PATH = "lgcharpe/ELC_BERT_baby_100M"
 MODEL_BASENAME = MODEL_PATH.split("/")[-1]
 
 def run_evaluation():
