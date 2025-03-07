@@ -1,3 +1,4 @@
+### tested
 import subprocess
 import torch
 
@@ -32,3 +33,5 @@ def run_evaluation(model_path):
 if __name__ == "__main__":
     for model_path in MODEL_PATHS:
         run_evaluation(model_path)
+
+

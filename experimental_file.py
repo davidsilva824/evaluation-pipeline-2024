@@ -18,11 +18,11 @@ def run_evaluation(model_path):
 
     command = [
         "python", "-m", "lm_eval",
-        "--model", "hf",  # Ensure MLM is used
-        "--model_args", f"pretrained={model_path},trust_remote_code=True",  # Explicitly set MLM class
+        "--model", "hf-mlm",  # Ensure MLM is used
+        "--model_args", f"pretrained={model_path},backend=mlm,trust_remote_code=True",  # Explicitly set MLM class
         "--tasks", "blimp_irregular_past_participle_verbs,blimp_irregular_plural_subject_verb_agreement_1,blimp_irregular_plural_subject_verb_agreement_2,blimp_wh_island,blimp_adjunct_island,blimp_complex_NP_island,blimp_sentential_subject_island,blimp_regular_plural_subject_verb_agreement_1,blimp_regular_plural_subject_verb_agreement_2",
         "--device", device,
-        "--batch_size", "1",
+        "--batch_size", "2",
         "--log_samples",
         "--output_path", f"results/blimp/{MODEL_BASENAME}/blimp_results.json"
     ]
