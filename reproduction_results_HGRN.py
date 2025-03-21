@@ -1,4 +1,11 @@
-### tested
+### not working
+
+# instalation: needs flash-linear-attention, which in turn needs triton
+# https://github.com/fla-org/flash-linear-attention
+# 
+
+### Problems:
+# install of triton not working
 
 import subprocess
 import torch
