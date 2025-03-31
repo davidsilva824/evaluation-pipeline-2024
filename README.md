@@ -1,9 +1,10 @@
 This evaluation pipeline is part of the reproduction results for the dissertation "Exploring Grammatical Constraints in Large Language Models" by David Silva.
 It reproduces some of the results from the "BabyLM challenge" (Hu et al. 2024; Wardstad et al., 2024).
 
-It is forked from: babylm/evaluation-pipeline-2024
+It is forked from: https://github.com/babylm/evaluation-pipeline-2024
 
-To start the evaluation, run the respective files 'evaluation_model.py'. 
+To start the evaluation, run the respective files 'evaluation_model.py'.
+Install all the necessary packages as they are requeired.
 All results are saved in the folder: 'results'.
 
 References:
