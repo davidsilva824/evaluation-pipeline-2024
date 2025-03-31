@@ -1,20 +1,11 @@
-### not working
-
-# instalation: needs flash-linear-attention, which in turn needs triton
-# https://github.com/fla-org/flash-linear-attention
-# 
-
-### Problems:
-# install of triton not working
+### tested and working
 
 import subprocess
 import torch
 
-# List of model paths
-MODEL_PATHS = [
-    'PatrickHaller/hgrn2_pile_10M_distill_babylm',
-    'PatrickHaller/hgrn2_pile_100m_distill_babylm'
-    ]
+# Define the model path at the beginning
+
+MODEL_PATHS = ["babylm/babyllama-100m-2024"]
 
 def run_evaluation(model_path):
     MODEL_BASENAME = model_path.split("/")[-1]  # Extract model name
@@ -28,7 +19,7 @@ def run_evaluation(model_path):
     command = [
         "python", "-m", "lm_eval",
         "--model", "hf",
-        "--model_args", f"pretrained={model_path},trust_remote_code=True",
+        "--model_args", f"pretrained={model_path},backend=causal,trust_remote_code=True",
         "--tasks", "blimp_irregular_past_participle_verbs,blimp_irregular_plural_subject_verb_agreement_1,blimp_irregular_plural_subject_verb_agreement_2,blimp_wh_island,blimp_adjunct_island,blimp_complex_NP_island,blimp_sentential_subject_island,blimp_regular_plural_subject_verb_agreement_1,blimp_regular_plural_subject_verb_agreement_2",
         "--device", device,
         "--batch_size", "1",
