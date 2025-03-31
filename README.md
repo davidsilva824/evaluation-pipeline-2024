@@ -4,4 +4,4 @@ It is forked from: babylm/evaluation-pipeline-2024
 To start the evalution, run the respective files 'evaluation_model.py'. 
 All results are saved in the folder: 'results'.
 
-The reproduction of results with prompting methods from Hu et al.(2024) is availabe in a Colabe file: https://colab.research.google.com/drive/1xKxk4nczHxpcmeIyvCikSE74ZAiGwYoF 
+The reproduction of results with prompting methods from Hu et al.(2024) is availabe in a Colab file: https://colab.research.google.com/drive/1xKxk4nczHxpcmeIyvCikSE74ZAiGwYoF 
