@@ -4,7 +4,7 @@ It reproduces some of the results from the "BabyLM challenge" (Hu et al. 2024; W
 It is forked from: https://github.com/babylm/evaluation-pipeline-2024
 
 To start the evaluation, run the respective files 'evaluation_model.py'.
-Install all the necessary packages as they are requeired.
+Install all the necessary packages as they are required.
 All results are saved in the folder: 'results'.
 
 References:
