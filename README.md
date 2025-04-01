@@ -13,5 +13,5 @@ Hu, M. Y., Mueller, A., Ross, C., Williams, A., Linzen, T., Zhuang, C., Cotterel
 
 Warstadt, A., Mueller, A., Choshen, L., Wilcox, E. G., Zhuang, C., Williams, A., Cotterell, R., & Linzen, T. (2023b). Proceedings of the BabyLM Challenge at the 27th Conference on Computational Natural Language Learning. ACL Anthology. https://aclanthology.org/volumes/2023.conll-babylm/
 
-The reproduction of results with prompting methods is availabe in a Colab file: https://colab.research.google.com/drive/1xKxk4nczHxpcmeIyvCikSE74ZAiGwYoF
+The reproduction of results with prompting methods for the plural attraction is availabe in a Colab file: https://colab.research.google.com/drive/1xKxk4nczHxpcmeIyvCikSE74ZAiGwYoF
 Needs an openAI key to be used.
